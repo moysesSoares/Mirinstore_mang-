@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0f;
+}
+
+/*NAVIGATION AND HEADER */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+
+    background: rgba(10, 10, 15, 0.8);
+    backdrop-filter: blur(10px);
+
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #a855f7;
+}
+
+.logoInsta {
+    width: 30px;
+    height: 30px;
+}
+
+.mirinTitle {
+    font-size: 32px;
+    color: #a855f7;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a855f7;
+}
+
+/* ABOUT */
+
+.about section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px 10%;
+    gap: 50px;
+}
+
+.about-text {
+    width: 60%;
+    order: 1;
+}
+
+.about-img {
+    width: 40%;
+    order: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 12px;
+
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.about-img img:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.about section h1 {
+    font-size: 50px;
+    color: #7a3cff;
+}
+
+.about section h2 {
+    font-size: 35px;
+    color: #a855f7;
+}
+
+.about section p {
+    text-align: justify;
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* CONTENT OF WEBSITE */
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.foto-legenda {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-legenda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.foto-legenda figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.3),
+            transparent);
+    backdrop-filter: blur(5px);
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s;
+}
+
+.foto-legenda:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+}
+
+.foto-legenda:hover img {
+    transform: scale(1.1);
+}
+
+.foto-legenda:hover figcaption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.foto-legenda figcaption h1 {
+    color: white;
+}
+
+.foto-legenda figcaption h2 {
+    color: #a855f7;
+}
+
+.foto-legenda figcaption p {
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+}
+
+/* HERO */
+
+.hero {
+    border-top: 1px solid rgb(67, 16, 138);
+    border-bottom: 1px solid rgb(67, 16, 138);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 85vh;
+    padding: 0 70px;
+    background:
+        linear-gradient(90deg, #0a0a0f 45%, rgba(10, 10, 15, 0.7) 60%, transparent),
+        url('imgContent/Hero.jpeg') right center no-repeat;
+    background-size: contain;
+    color: white;
+}
+
+.hero-text h1 {
+    color: rgb(67, 16, 138);
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    color: #a855f7;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.hero1 {
+    border-top: 1px solid rgb(67, 16, 138);
+    border-bottom: 1px solid rgb(67, 16, 138);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 85vh;
+    padding: 0 80px;
+    background:
+        linear-gradient(90deg, #0a0a0f 45%, rgba(10, 10, 15, 0.7) 60%, transparent),
+        url('imgContent/contatoImg.png') right center no-repeat;
+    background-size: contain;
+    color: white;
+}
+
+.hero-text1 h1 {
+    color: rgb(67, 16, 138);
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-text1 h2 {
+    font-size: 32px;
+    color: #a855f7;
+    margin-bottom: 10px;
+}
+
+.hero-text1 p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* HERO BUTTON */
+
+.btn {
+    background: linear-gradient(45deg, #7a3cff, #a855f7);
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn1 {
+    background: linear-gradient(45deg, #7a3cff, #a855f7);
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #a855f7;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #a855f7;
+}
+
+/* FOOTER */
+
+.footer {
+    background: linear-gradient(135deg, #0f0f1a, #1a0f2e);
+    color: white;
+    padding: 25px 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer h1 {
+    font-size: 30px;
+    color: #a855f7;
+}
+
+.footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #7a3cff;
+}
+
+.footer p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.btn-footer {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #7a3cff;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-footer:hover {
+    background: #a855f7;
+}
